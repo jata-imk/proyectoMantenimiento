@@ -1,3 +1,4 @@
 node_modules/
 *.env
 public/sass
+public/js/main.js

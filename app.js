@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const dataRoutes = require("./routes/dataRoutes");
+const compression = require("compression");
 
 //Create express app
 const app = express();
@@ -19,6 +20,9 @@ const data = JSON.parse(
 
 //Middleware for made req.body available on express
 app.use(express.json());
+
+//Compression middleware
+app.use(compression());
 
 //Middleware to serve static files
 app.use(express.static(`${__dirname}/public`));

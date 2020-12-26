@@ -132,7 +132,7 @@
 
         let programa = function() {
           //Abrimos la conexion
-          xhr.open("GET", "http://localhost:8000/api/v1/data/last", false);
+          xhr.open("GET", "/api/v1/data/last", false);
 
           xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200) {
@@ -162,7 +162,7 @@
 
         let programaGraficas = function() {
           //Abrimos la conexion
-          xhr.open("GET", "http://localhost:8000/api/v1/data/last?qty=10", true);
+          xhr.open("GET", "/api/v1/data/last?qty=10", true);
 
           xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200) {
