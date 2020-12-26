@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "fecha": "2020-12-25",
+        "hora": "10:00:00",
+        "temperaturaLlenado": "32.5",
+        "corrienteLlenado": "1.35",
+        "vibracionLlenado": false,
+        "distanciaLlenado": "50",
+        "temperaturaAgitador": "32.75",
+        "corrienteAgitador": "1.25",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 2,
+        "fecha": "2020-12-25",
+        "hora": "10:05:00",
+        "temperaturaLlenado": "37",
+        "corrienteLlenado": "2.15",
+        "vibracionLlenado": false,
+        "distanciaLlenado": "20",
+        "temperaturaAgitador": "36.7",
+        "corrienteAgitador": "2.05",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 3,
+        "fecha": "2020-12-25",
+        "hora": "10:10:00",
+        "temperaturaLlenado": "43",
+        "corrienteLlenado": "2.35",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "35",
+        "temperaturaAgitador": "34",
+        "corrienteAgitador": "2.35",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 4,
+        "fecha": "2020-12-25",
+        "hora": "10:15:00",
+        "temperaturaLlenado": "45",
+        "corrienteLlenado": "2.63",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "40",
+        "temperaturaAgitador": "34",
+        "corrienteAgitador": "2.5",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 5,
+        "fecha": "2020-12-25",
+        "hora": "10:20:00",
+        "temperaturaLlenado": "54.2",
+        "corrienteLlenado": "3.1",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "47",
+        "temperaturaAgitador": "51",
+        "corrienteAgitador": "3",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 6,
+        "fecha": "2020-12-25",
+        "hora": "10:25:00",
+        "temperaturaLlenado": "62.66",
+        "corrienteLlenado": "3.75",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "62.55",
+        "temperaturaAgitador": "64.2",
+        "corrienteAgitador": "3.65",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 7,
+        "fecha": "2020-12-25",
+        "hora": "10:30:00",
+        "temperaturaLlenado": "68.534",
+        "corrienteLlenado": "4.15",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "65",
+        "temperaturaAgitador": "67.90",
+        "corrienteAgitador": "4.35",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 8,
+        "fecha": "2020-12-25",
+        "hora": "10:35:00",
+        "temperaturaLlenado": "74.34",
+        "corrienteLlenado": "3.9",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "68",
+        "temperaturaAgitador": "77.05",
+        "corrienteAgitador": "4.05",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 9,
+        "fecha": "2020-12-25",
+        "hora": "10:40:00",
+        "temperaturaLlenado": "77.345",
+        "corrienteLlenado": "4.15",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "71",
+        "temperaturaAgitador": "72.90",
+        "corrienteAgitador": "3.75",
+        "vibracionAgitador": false
+    },
+    {
+        "id": 10,
+        "fecha": "2020-12-25",
+        "hora": "10:45:00",
+        "temperaturaLlenado": "75",
+        "corrienteLlenado": "4.15",
+        "vibracionLlenado": false,
+	    "distanciaLlenado": "70",
+        "temperaturaAgitador": "74.5",
+        "corrienteAgitador": "3.35",
+        "vibracionAgitador": false
+    }
+]

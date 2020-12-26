@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet">
+    
+
+    <!-- AmCharts -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/gif" href="img/favicon.gif">
+
+    <title>Mantenimiento Industrial</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/favicon.gif" alt="Logo" class="header__logo">
+        </div>
+
+        <div class="header__txt-box">
+            <h1 class="heading-primary">Mantenimiento Industrial</h1>
+            <h2 class="heading-secondary">Tablero de visualización de datos de sensores</h2>
+        </div>
+
+        <a href="#tablero" class="btn btn-header">Ver Datos</a>
+    </header>
+
+    <main class="tablero" id="tablero">
+        <nav class="tablero__nav">
+            <h3 class="heading-tertiary">Tablero</h3>
+
+            <div class="tablero__opciones">
+                <svg class="tablero__icon">
+                    <use xlink:href="img/sprite.svg#icon-info-circle"></use>
+                </svg>
+
+                <svg class="tablero__icon">
+                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                </svg>
+            </div>
+        </nav>
+
+        <nav id="tablero__sidebar" class="tablero__sidebar sidebar">
+            <ul class="sidebar__list">
+                <li class="sidebar__item sidebar__item--active">
+                    <a href="tablero__resumen-diario" class="sidebar__link">
+                        <svg class="sidebar__item-icon">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span>Vista Rapida</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="tablero__graficas" class="sidebar__link">
+                        <svg class="sidebar__item-icon">
+                            <use xlink:href="img/sprite.svg#icon-bar-chart"></use>
+                        </svg>
+                        <span>Graficas</span>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="legal">&copy; 2020 by Jose A. All rights reserved.</p>
+        </nav>
+
+        <div id="tablero__info" class="tablero__info">
+            <div id="tablero__resumen-diario" class="tablero__resumen-diario swing-in-top-fwd">
+                h2.tablero__resumen-diario--heading.u-margin-bottom-small Ultima Actualización
+                h3.tablero__resumen-diario--subtitle.heading-tertiary Equipo de Llenado
+
+                <div class="tablero__resumen-diario--cards">
+                    <div class="info-card border-bottom-orange">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-orange Temperatura
+
+                            p#temperatura.info-card__txt--paragraph Cargando...
+                            
+                        </div>
+
+                        <div>
+                            <svg  class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-thermometer-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card border-bottom-blue">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-blue Corriente
+
+                            p#corriente.info-card__txt--paragraph Cargando...
+                        </div>
+
+                        <div>
+                            <svg class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-sun-o"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card border-bottom-green">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-green Alerta Vibración
+
+                            p#vibracion.info-card__txt--paragraph Cargando...
+                        </div>
+
+                        <div>
+                            <svg class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-globe"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card border-bottom-yellow">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-yellow Nivel Tanque
+
+                            p#nivelTanque.info-card__txt--paragraph Cargando...
+                        </div>
+
+                        <div>
+                            <svg class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-tint"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                h3.tablero__resumen-diario--subtitle.heading-tertiary Equipo de Agitación
+                <div class="tablero__resumen-diario--cards">
+                    <div class="info-card border-bottom-orange">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-orange Temperatura
+
+                            p#temperaturaAgitador.info-card__txt--paragraph Cargando...
+                            
+                        </div>
+
+                        <div>
+                            <svg  class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-thermometer-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card border-bottom-blue">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-blue Corriente
+
+                            p#corrienteAgitador.info-card__txt--paragraph Cargando...
+                        </div>
+
+                        <div>
+                            <svg class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-sun-o"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="info-card border-bottom-green">
+                        <div class="info-card__txt">
+                            h3.info-card__txt--heading.text-green Alerta Vibración
+
+                            p#vibracionAgitador.info-card__txt--paragraph Cargando...
+                        </div>
+
+                        <div>
+                            <svg class="info-card__icon">
+                                <use xlink:href="img/sprite.svg#icon-globe"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                h2.tablero__resumen-diario--heading.u-margin-top-small Descripción
+                <p class="tablero__resumen-diario--paragraph">El presente proyecto nació con la resolución de un problema el cual se detectó en una de las visitas de campo hechas a Vertical Knits S.A. de C.V., la cual es una empresa que fabrica telas y playeras de fibras naturales y sintéticas; así que, en uno de sus procesos la variable de temperatura al momento de mezclar tintas para teñir las telas, no era medida, siendo este un dato empírico considerado por los operarios, por lo tanto, nos vimos en la necesidad de como ingenieros mecatrónicos darle solución a este problema. Sin embargo, esta necesidad se extendió y con aprendizajes obtenidos del curso de mantenimiento industrial consideramos tener un ambiente mejor controlado y adaptándonos a la parte de mantenimiento preventivo y correctivo en el monitoreo de los agitadores industriales montados a un tanque, siendo el principal objetivo poder medir variables como temperatura, vibración y corriente del motor, pieza del agitador industrial. Estos mismos son importantes ya que, si no son controlados o monitoreados parte del chequeo de rutina, puede verse afectado la eficiencia del motor, e inclusive esfuerzos mal soportados por el eje o método de sujeción como la brida, dando paso a una flecha quebrada. Por lo tanto, es necesario medir y analizar las vibraciones en el presente caso de estudio ya que es la principal técnica empleada para el monitoreo del estado de condición de las máquinas. Esto nos permite conocer en profundidad el comportamiento de los equipos mientras están en funcionamiento y nos ayuda a detectar la mayor cantidad de problemas mecánicos en los equipos de una industria.</p>
+            </div>
+
+            <div id="tablero__graficas" class="tablero__graficas">
+                h2.tablero__resumen-diario--heading.u-margin-bottom-small Linea del Tiempo
+                h3.tablero__resumen-diario--subtitle.heading-tertiary Equipo de Llenado
+
+                <div class="tablero__graficas--content">        
+                    <div class="chartbox" id="chartdivLine">
+        
+                    </div>
+                    
+                    <div class="chartbox" id="chartdivLine2">
+        
+                    </div>
+
+                    <div class="chartbox" id="chartdivLine3">
+        
+                    </div>
+                </div>
+
+                h3.tablero__resumen-diario--subtitle.heading-tertiary.u-margin-top-small Equipo de Agitación
+                <div class="tablero__graficas--content">        
+                    <div class="chartbox" id="chartdivLine4">
+        
+                    </div>
+                    
+                    <div class="chartbox" id="chartdivLine5">
+        
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="paragraph">Made by 
+            <svg class="footer__heart-icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg> José A. IMK7
+        </p>
+    </footer>
+    
+    <script src="js/main.js""></script>
+</body>
+</html>
